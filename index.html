@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/LeeLogo.png" class="logo" alt="Logo">
+                <!-- <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                     <li><a href="#portfolio">Portfolio</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+            </nav>
+            <div class="header-text">
+                <p>UX/UI Designer <br>Frontend developer</p>
+                <h1>Hi, I'm <span>Sengly</span> <br> from Cambodia.</h1>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search project">
+                    <button>search</button>
+               </div>
+            </div>
+          
+        </div>
+    </div>
+
+    <!------------------------ About Me ------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/photo_2024-08-12_13-00-59.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a frontend developer. I study at Build Bright University. 
+                        I have to learn HTML CSS Javascript Node-js Boostrap and PHP. 
+                        I don't have an experience at any conmpany before but I trained to build alot of web page on myself, 
+                        So if you want to take me to work in your company please check my CV and contact me.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI</span><br>Design web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Adroid/ios apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>2024 </span><br>UX/UI and Frontend developer Tranning at EKV</li>
+                            <li><span>2023 - 2024</span><br>Frontend developer at home</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2024 - Current</span><br>Studying Information Tecnology at Build Brgiht University.</li>
+                            <li><span>2015-2021</span><br>Studied at Hunsen Sampean Pheap Hight School.</li>
+                            <li><span>2009-2015</span><br>Studied at Phum O Primary School. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------- -->
+    
+    <ul class="tabs">
+        <li class="active" data-id="0">Education</li>
+        <li data-id="1">In-session Training</li>
+        <li data-id="2">Experience</li>
+        <li data-id="3">Interview</li>
+    </ul>
+
+    <div class="contents">
+
+        <div class="box show" data-content="0">
+            <!-- <img src="https://cdn.lordicon.com/szoiozyr.json" alt=""> -->
+            <lord-icon
+                src="https://cdn.lordicon.com/szoiozyr.json"
+                trigger="hover"
+                style="width:1000px;height:250px">
+            </lord-icon>
+            <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium itaque amet ducimus, magni
+                    iure
+                    a repudiandae molestias nemo voluptatibus voluptas earum excepturi architecto, iusto necessitatibus
+                    sequi perferendis veritatis! Voluptatem?
+                </p>
+            </div>
+        </div>
+
+        <div class="box hide" data-content="1">
+            <img src="https://images.pexels.com/photos/5865862/pexels-photo-5865862.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="">
+            <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium itaque amet ducimus, magni
+                    iure
+                    a repudiandae molestias nemo voluptatibus voluptas earum excepturi architecto, iusto necessitatibus
+                    sequi perferendis veritatis! Voluptatem?
+                   
+                </p>
+            </div>
+        </div>
+
+        <div class="box hide" data-content="2">
+            <img src="https://images.pexels.com/photos/3761308/pexels-photo-3761308.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+            <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium itaque amet ducimus, magni
+                    iure
+                    a repudiandae molestias nemo voluptatibus voluptas earum excepturi architecto, iusto necessitatibus
+                    sequi perferendis veritatis! Voluptatem?
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="box hide" data-content="3">
+            <img src="https://images.pexels.com/photos/5336951/pexels-photo-5336951.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+            <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium itaque amet ducimus, magni
+                    iure
+                    a repudiandae molestias nemo voluptatibus voluptas earum excepturi architecto, iusto necessitatibus
+                    sequi perferendis veritatis! Voluptatem?
+                   
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ------------services------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is an interdisciplinary field that blends creativity with technical skills. 
+                        It requires understanding user behavior, graphic design principles, 
+                        coding languages (HTML, CSS, JavaScript), and often collaboration with developers and content creators to bring a website to life.
+                        
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>UX designers aim to create products that are user-centered, efficient, and satisfying to use.
+                         They work closely with stakeholders, UI designers, developers, and other team members to ensure that design decisions align with business goals and user needs.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design requires a blend of creativity, empathy for users,
+                         and technical proficiency to create compelling and functional mobile experiences. 
+                         Successful app designers prioritize user needs and business objectives while leveraging design principles to deliver intuitive and delightful interactions within the app.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Portfolio----------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app contact you to the  talented people around the world.
+                            Download it from play store or App store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Popular examples of social media apps include Facebook, Instagram,
+                             Twitter, LinkedIn, Snapchat, TikTok, and Pinterest. 
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>These apps leverage technology to create seamless, secure,
+                             and enjoyable shopping experiences for users across different devices.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------contact--------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sovsengly77@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 096 42 44 177</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/SengLy6?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://t.me/Sov_Sengly" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://github.com/SovSengly"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://tiktok.com/@sengly.dev" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="mailto: sovsengly77@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="Images/CV-Sengly.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright © Sengly Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
